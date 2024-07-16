@@ -1,15 +1,18 @@
 .box3_wrapper {
   background: radial-gradient(ellipse at center, #b46c07c1 0%, #ffcb9a95 100%);
-  padding: 0 10px;
+  display: inline-block;
   border-radius: 20px;
+  font-size: 50px;
+  color: #ffffff;
+  padding: 10px;
+  z-index: 2;
+
   position: relative;
-  /* overflow: hidden; */
-  width: 300px;
+  overflow: hidden;
 }
 
 .box3_wrapper::before {
   content: "";
-  display: block;
   width: 100px;
   height: 140%;
   left: -40%;
@@ -24,16 +27,8 @@
 }
 
 .box3.box3_wrapper::before {
-  animation: anime 2s ease-in-out infinite;
   content: "";
-}
-
-.box3_title {
-  color: #ffffff;
-  font-size: 50px;
-  padding: 10px;
-  position: relative;
-  z-index: 2;
+  animation: anime 2s ease-in-out infinite;
 }
 
 @-webkit-keyframes anime {
@@ -43,7 +38,7 @@
   }
 
   100% {
-    left: 110%;
+    left: 1110%;
     transform: translateX(100%);
   }
 }
